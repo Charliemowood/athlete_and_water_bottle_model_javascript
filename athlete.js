@@ -14,7 +14,9 @@ Athlete.prototype.run = function() {
 Athlete.prototype.drink = function(water_bottle) {
 // calling the drink function makes sure the volume in the water bottle goes down by the correct amount
     water_bottle.drink();
+    if (water_bottle.volume > 0); {
     this.hydration += 10;
+  }
 }
 
 
